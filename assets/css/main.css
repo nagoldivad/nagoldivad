@@ -2146,7 +2146,7 @@ input, select, textarea {
 				color: white;
 			}
 
-		#footer .copyright {
+		/* #footer .copyright {
 			list-style: none;
 			padding-left: 0;
 		}
@@ -2172,11 +2172,13 @@ input, select, textarea {
 				margin-left: 0.5em;
 			}
 
-		}
+		} */
 
 
 		/* DML - My custom styles */
 
 		.social-links {
-			margin: 10px 0 20px;
+			margin: 10px 0 10px;
 		}
+
+		/* .dml-copyright {} */
