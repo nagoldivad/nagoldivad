@@ -1,0 +1,24 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    David M. Logan -- Designer -- <twitter>
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+    Acknowlegements...
+
+    "Astral" template from HTML5Up
+    https://html5up.net/
+
+    HTML5 Boilerplate
+    https://html5boilerplate.com/
+
+    FontAwesome
+    https://fontawesome.com/
+
+    Images from Unsplash
+    https://unsplash.com
