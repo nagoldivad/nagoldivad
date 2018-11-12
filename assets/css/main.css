@@ -1326,7 +1326,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif; /* DML - added system font stack */
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -2182,3 +2182,52 @@ input, select, textarea {
 		}
 
 		/* .dml-copyright {} */
+
+		/* Testimonials */
+		.testimonial {
+			margin: 0 auto;
+			padding: 20px;
+			max-width: 768px;
+			text-align: center;
+		}
+		.cite {
+			font-size: 0.9em;
+			vertical-align: middle;
+		}
+
+		/* Image overlay */
+		.tile {
+			position: relative;
+		}
+		.overlay {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			color: #ffffff;
+			background-color: rgb(73, 52, 109);
+			opacity: 0;
+			overflow: hidden;
+			-webkit-transition: all 0.25s ease-out;
+			-moz-transition: all 0.25s ease-out;
+			-ms-transition: all 0.25s ease-out;
+			-o-transition: all 0.25s ease-out;
+			transition: all 0.25s ease-out;
+		}
+		.overlay-content {
+			text-align: center;
+			position: relative;
+			top: 80%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			transition: all 0.2s ease-in-out;
+		}
+		.tile:hover .overlay, .tile:focus .overlay {
+			opacity: 0.65;
+		}
+		.tile:hover .overlay-content, .tile:focus .overlaycontent {
+			top: 50%;
+			opacity: 1;
+		}
