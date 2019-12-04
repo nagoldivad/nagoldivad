@@ -3,22 +3,12 @@
 
 # TEAM
 
-    David M. Logan -- Designer -- <twitter>
+    David M. Logan -- Developer -- @nagoldivad
 
 # THANKS
 
+    <name>
+
 # TECHNOLOGY COLOPHON
 
-    Acknowlegements...
-
-    "Astral" template from HTML5Up
-    https://html5up.net/
-
-    HTML5 Boilerplate
-    https://html5boilerplate.com/
-
-    FontAwesome
-    https://fontawesome.com/
-
-    Images from Unsplash
-    https://unsplash.com
+## Technologies used
