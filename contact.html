@@ -10,14 +10,14 @@
     <meta name="description" content="Web design for businesses and individuals"/>
     <meta name="author" content="David M. Logan" />
 
-    <title>Websites and Web design - Nagoldivad</title>
+    <title>Contact - Nagoldivad</title>
 
     <meta name="theme-color" content="#007bff" />
     <!-- <link rel="icon" sizes="192x192" href="nice-highres.png" /> -->
     <!-- <link rel="apple-touch-icon" href="icon.png" /> -->
 
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="canonical" href="https://www.nagoldivad.com/" />
+    <link rel="canonical" href="https://www.nagoldivad.com/contact.html" />
 
     <!-- Stylesheets -->
     <!-- <link rel="stylesheet" href="normalize801.css"> -->
@@ -52,7 +52,7 @@
                             <a class="nav-link" href="./blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./contact.html">Contact me</a>
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact me</a>
                         </li>
                     </ul>
                 </div><!-- .collapse .navbar-collapse -->
@@ -66,13 +66,20 @@
 
     <div class="container mb-4">
         <div class="row justify-content-center">
-            <div class="col-md-3">
-                <img class="img-fluid rounded" src="assets/images/cali_and_i_660x680.jpg" alt="Cali and I">
-            </div>
-            <div class="col-md-7">
-                <h3>ABOUT ME</h3>
-                <p>My name is David Logan. I make websites that are powerful and beautiful. Whether you need a brand new website or want your old site redesigned, I expertly handle the design, hosting, security, and SEO (search engine optimization) that your business needs to succeed on the web.</p>
-                <p>If you have any questions please <a href="./contact.html">contact me.</a> While you're here take a look at <a href="./portfolio.html">my portfolio.</a></p>
+            <div class="col-md-11">
+
+                <h3>CONTACT ME</h3>
+
+                <form name="contact" method="POST" netlify>
+                    <div>
+                        <input class="form-control" type="text" name="name" placeholder="Name" /><br>
+                        <input class="form-control" type="email" name="email" placeholder="Email" /><br>
+                        <input class="form-control" type="text" name="subject" placeholder="Subject" /><br>
+                        <textarea class="form-control" name="message" placeholder="Message" rows="6"></textarea><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
@@ -98,7 +105,7 @@
             </div>
         </div>
     </div>
-
+        
 
     <!-- Scripts -->
 
