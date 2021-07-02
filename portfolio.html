@@ -23,10 +23,6 @@
     <!-- <link rel="stylesheet" href="styles.min.css"> -->
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
 
-    <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Josefin+Sans:wght@300;700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet"> -->
-
 </head>
 <body>
 
@@ -38,7 +34,7 @@
 
 
     <div class="container mt-4">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">NagolDivad</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,13 +43,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="https://www.nagoldivad.com/index.html#contact">Contact me</a>
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./contact.html">Contact me</a>
                         </li>
                     </ul>
                 </div><!-- .collapse .navbar-collapse -->
@@ -62,18 +58,18 @@
     </div><!-- .container -->
 
 
-    <div class="mb-5"></div>
+    <div style="margin-bottom: 4rem;"></div> <!-- spacer -->
 
 
-    <div class="container">
-        <div class="row mb-4">
+    <div class="container mb-4">
+        <div class="row justify-content-center">
 
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h2>David Logan</h2>
                 <p class="lead">Web design is my passion</p>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <p>My goal is to build websites that are fast, beautiful, and mobile first. I specialise in web sites that look great on any device, and that are documented and maintainable. I can work with any widely supported CMS, such as WordPress, and can handle custom theme and plugin design, administration, and security. Below you can view a few of my recent freelance projects.</p>
             </div>
 
@@ -88,7 +84,7 @@
                 <div class="card shadow">
                     <img src="assets/images/tn_spectrumsettlement.png" class="card-img-top" alt="portfolio item">
                     <div class="card-body">
-                        <p class="card-text"><a href="https://spectrumsettlement.com/">Spectrum Settlement</a> is a WordPress web site that features Active Cases and Case Studies that can be updated by the client.</p>
+                        <p class="card-text"><a href="https://spectrumsettlement.com/">Spectrum Settlement</a> is a WordPress web site that features Active Cases and Case Studies that can be easily updated by the client.</p>
                     </div>
                 </div>
             </div><!-- .col -->
@@ -97,7 +93,7 @@
                 <div class="card shadow">
                     <img src="assets/images/tn_dianomic.png" class="card-img-top" alt="portfolio item">
                     <div class="card-body">
-                        <p class="card-text"><a href="https://dianomic.com/">Dianomic</a> is a WordPress web site that offers a striking presentation of how an open source technology can help industry become more effecient.</p>
+                        <p class="card-text"><a href="https://dianomic.com/">Dianomic</a> is a WordPress web site with a striking presentation of how open source technology can help industry become more effecient.</p>
                     </div>
                 </div>
             </div>
@@ -122,11 +118,34 @@
     </div>
 
 
+    <div style="margin-bottom: 4rem;"></div> <!-- spacer -->
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+
+                <div class="social-links text-center">
+                    <a href="https://github.com/nagoldivad"><img src="img_github.svg" width="40"></a> &nbsp;
+                    <a href="https://codepen.io/nagoldivad/"><img src="img_codepen.svg" width="40"></a> &nbsp;
+                    <a href="https://twitter.com/nagoldivad"><img src="img_twitter.svg" width="40"></a>
+                </div>
+        
+                <div class="dml-copyright text-center">
+                    <p>Hand designed by David Logan 2020 - 2021</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
-    <!-- scripts -->
+    <!-- Scripts -->
+
+    <!-- Bootstrap JS -->
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130109153-1"></script>
     <script>
