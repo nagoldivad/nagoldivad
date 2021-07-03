@@ -1,8 +1,0 @@
-https://colorlib.com/preview/#amplify
-
-#007bff
-
-Title: Josefin Sans (light) 50px
-Subtitle: Playfair Display (Regular Italic) 18px
-H3, H4: Josefin Sans (bold) 24px
-Body text: Arimo 16px

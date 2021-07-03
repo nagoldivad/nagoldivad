@@ -1,14 +1,23 @@
+##     ## ##     ## ##     ##    ###    ##    ##  ######      ######## ##     ## ######## 
+##     ## ##     ## ###   ###   ## ##   ###   ## ##    ##        ##     ##   ##     ##    
+##     ## ##     ## #### ####  ##   ##  ####  ## ##              ##      ## ##      ##    
+######### ##     ## ## ### ## ##     ## ## ## ##  ######         ##       ###       ##    
+##     ## ##     ## ##     ## ######### ##  ####       ##        ##      ## ##      ##    
+##     ## ##     ## ##     ## ##     ## ##   ### ##    ## ###    ##     ##   ##     ##    
+##     ##  #######  ##     ## ##     ## ##    ##  ######  ###    ##    ##     ##    ##    
+
+
 # humanstxt.org/
 # The humans responsible & technology colophon
 
+
 # TEAM
 
-    David M. Logan -- Developer -- @nagoldivad
+    David M. Logan -- Web Developer -- @nagoldivad
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 
 ## Technologies used
+
+Bootstrap 5
