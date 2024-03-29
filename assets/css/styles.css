@@ -153,6 +153,11 @@ section.dml-section {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     background-color: #fff;;
 }
+@media (max-width: 768px) {
+    #dml-testimonials .dml-quote-box {
+        margin-bottom: 2rem;
+    }
+}
 
 
 /* ---- contact styles ---- */
@@ -233,7 +238,6 @@ input, textarea {
 	border-radius: 8px;
 	outline: none;
 	padding: 8px;
-	/* font-family: 'Sniglet', cursive; */
 	font-size: 1.25em;
 	color: #777;
 	transition: border 0.5s;
@@ -246,8 +250,12 @@ input, textarea {
 	box-sizing:border-box;
 	
 }
+@media (max-width: 768px) {
+    input, textarea {
+        width: 100%;
+    }
+}
 input:focus, textarea:focus{
-	/* border: solid 3px black;	 */
     transform: scale(1.02);
 }
 textarea {
@@ -259,15 +267,4 @@ label{
 	font-size: 1.5em;
 	margin-top: 20px;
 	padding-left: 20px;
-}
-.formgroup, .formgroup-active, .formgroup-error{
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: 10.5%;
-	transition: background-image 0.7s;
-	-webkit-transition: background-image 0.7s;
-	-moz-transition: background-image 0.7s;
-	-o-transition: background-image 0.7s;
-	width: 566px;
-	padding-top: 2px;
 }
