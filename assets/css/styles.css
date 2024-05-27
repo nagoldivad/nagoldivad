@@ -1,6 +1,10 @@
 /*
  * styles.css
  * this is the main stylesheet for this website
+ * https://nagoldivad.com
+ * 
+ * March to May, 2024
+ *
  */
 
 
@@ -33,10 +37,10 @@ a:hover {
     font-size: clamp(16px, 1rem + ((1vw - 3.2px) * 0.179), 18px);
   }
 .manrope-700 {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* images -- this stuff was needed... from before when BS was used */
@@ -100,6 +104,21 @@ section.dml-section {
         width: auto;
         margin: 0 1rem;
     }
+}
+
+
+/* ---- nav styles ---- */
+
+#nav h1 a {
+    color: black;    
+}
+#nav h1 a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.dml-nav-right {
+    text-align: right;
 }
 
 
