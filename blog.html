@@ -20,15 +20,15 @@
     <link rel="canonical" href="https://www.nagoldivad.com/blog.html" />
 
     <!-- Stylesheets -->
-    <!-- <link rel="stylesheet" href="styles.min.css"> -->
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Josefin+Sans:wght@300;700&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="manrope">
 
     <!--[if IE]>
         <div class="alert alert-danger" role="alert">
@@ -37,83 +37,45 @@
     <![endif]-->
 
 
-    <div class="container mt-4">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">NagolDivad</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./contact.html">Contact me</a>
-                        </li>
-                    </ul>
-                </div><!-- .collapse .navbar-collapse -->
-            </div><!-- .container-fluid -->
-        </nav>
-    </div><!-- .container -->
+    <!-- --- Nav --- -->
+
+    <section id="nav" class="dml-section">
+        <div class="dml-row-2">
+            <div>
+                <h1><a href="index.html">David Logan</a></h1>
+            </div>
+            <div class="dml-nav-right">
+                <p><a href="blog.html">blog</a></p>
+            </div>
+        </div><!-- .dml-row-2 -->
+    </section>
+
+    <section class="dml-section">
+
+        <h1>Blog articles</h1>
+
+        <ul>
+            <li>
+                <!--<img width="30px" height="30px" style="vertical-align: baseline;" src="assets/images/icon-document-add-svgrepo-com.svg">-->
+                <a href="blog-about.html">About this website</a>
+            </li>
+        </ul>
+
+    </section>
+
+
+
     
 
-    <div style="margin-bottom: 4rem;"></div> <!-- spacer -->
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-
-                <p>Nothing here yet. Please come back soon.</p>
-                
-            </div>
-        </div><!-- .row -->
-    </div><!-- .container -->
-
-
-    <div style="margin-bottom: 4rem;"></div> <!-- spacer -->
-
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col">
-
-                <div class="social-links text-center">
-                    <a href="https://github.com/nagoldivad"><img src="img_github.svg" width="40"></a> &nbsp;
-                    <a href="https://codepen.io/nagoldivad/"><img src="img_codepen.svg" width="40"></a> &nbsp;
-                    <a href="https://twitter.com/nagoldivad"><img src="img_twitter.svg" width="40"></a>
-                </div>
-        
-                <div class="dml-copyright text-center">
-                    <p>Hand designed by David Logan 2020 - 2021</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    
 
 
     <!-- Scripts -->
 
-    <!-- Bootstrap JS -->
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
-
-    <!-- scripts -->
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130109153-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-130109153-1');
-    </script>
+    <!-- GoatCounter analytics - https://goatcounter.com/ -->
+    <script data-goatcounter="https://davlog.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 
 
 </body>
