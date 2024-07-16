@@ -1,0 +1,211 @@
+/*
+ * Filename: styles.css
+ * 
+ * Description: Main stylesheet for CryptoToy
+ * This file contains styles for layout, typography, and custom components.
+ * 
+ * Author: David Logan
+ * Created: 2024-07-12
+ * Last modified: 2024-07-12
+ * 
+ * Table of Contents:
+ * 1. header
+ * 2. text
+ * 3. tabs
+ * 4. grid
+ * 
+ * Dependencies: 
+ * - none
+ * 
+ * Notes:
+ * - This stylesheet (sometimes) follows BEM naming convention
+ * - Media queries are mobile-first
+ */
+
+
+ /* header
+------------------------------- */
+
+.header__subtext {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/* text
+------------------------------- */
+
+ sl-split-panel {
+    --min: 180px; 
+    --max: calc(100% - 180px);
+    --divider-width: 20px;
+ }
+
+.text__wrapper-plaintext {
+    margin-right: 4px;
+    /* border: 1px solid pink; */
+}
+.text__wrapper-ciphertext {
+    margin-left: 4px;
+    /* border: 1px solid pink; */
+}
+
+.text__heading {
+    color: var(--sl-color-sky-100);
+    background-color: var(--sl-color-sky-900);
+    text-transform: uppercase;
+    font-stretch: 150%; /* FIXME */
+    vertical-align: middle;
+    padding: 0.25rem;
+}
+
+.text__textarea {
+    width: calc(100% - 8px);
+    height: 240px;
+    resize: none;
+    /* border-top-color: white; */
+}
+
+/* #ta-plaintext {
+    margin-right: 4px;
+}
+#ta-ciphertext {
+    margin-left: 4px;
+} */
+
+
+/* tabs
+------------------------------- */
+
+sl-range {
+    --track-color-active: var(--sl-color-primary-600);
+    --track-color-inactive: var(--sl-color-primary-100);
+    --track-active-offset: 50%;
+}
+
+.tab-wrapper {
+    margin: 0 1rem;
+}
+
+
+/* grid
+------------------------------- */
+
+/* container */
+
+.container-fluid
+.container-1240,
+.container-860,
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container-1240,
+.container {
+    max-width: 1240px;
+}
+
+.container-860 {
+    max-width: 860px;
+}
+
+/* row */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    column-gap: var(--col-gap);
+}
+/* Responsive layout - makes a one column layout instead of a multi-column layout */
+@media (max-width: 768px) {
+    .container-fluid
+    .container-1240,
+    .container-860,
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        column-gap: unset;
+    }
+    .row > div {
+        width: auto;
+        /* margin: 0 1rem; */
+    }
+}
+
+/* child columns */
+.full-col			{ width: 100%; }
+
+.one-half			{ width: 50%; }
+
+.one-quarter		{ width: 25%; }
+.two-quarters		{ width: 50%; }
+.three-quarters		{ width: 75%; }
+	
+.one-third			{ width: 33.333%; }
+.two-thirds			{ width: 66.667%; }
+
+
+/* Buttons
+------------------------------- */
+
+/* from: https://getcssscan.com/css-buttons-examples */
+
+.btn {
+  appearance: none;
+  background-color: var(--sl-color-gray-50);
+  border: 1px solid var(--sl-color-gray-300);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: var(--sl-color-sky-900);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+.btn:hover {
+  background-color: var(--sl-color-gray-200);
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+.btn:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+.btn:active {
+  background-color: var(--sl-color-gray-100);
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+.btn:focus {
+  outline: 1px transparent;
+}

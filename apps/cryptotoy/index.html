@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>CryptoToy2</title>
+
+    <!-- CryptoToy version 2.0 -->
+    <!-- July 2024             -->
+    
+    <!-- CryptoToy version 1.0          -->
+    <!-- Created by David Logan         -->
+    <!-- May 2014 through February 2015 -->
+
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="assets/styles.css" />
+    
+    <!-- links to Shoelace 2.15.1 on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+    
+    
+ </head>
+ <body>
+
+	<!-- ---- header -->
+
+    <div class="container-860">
+        <div class="row">
+            <div class="full-col">
+
+                <h1>CryptoToy <span class="header__subtext">&nbsp;&nbsp; simple alphabetic ciphers</span></h1>
+
+            </div><!-- .full-col -->
+        </div><!-- .row -->
+    </div><!-- .container-860 -->
+	
+	
+    <!-- ---- text areas -->
+
+    <div class="container-860">
+        <div class="row">
+            <div class="full-col">
+
+                <sl-split-panel>
+
+                    <sl-icon slot="divider" name="grip-vertical"></sl-icon>
+                    
+                    <div slot="start" class="text__wrapper-plaintext">
+                        <div class="text__heading">Plaintext</div>
+                        <textarea id="ta-plaintext" class="text__textarea"></textarea>
+                    </div>
+
+                    <div slot="end" class="text__wrapper-ciphertext">
+                        <div class="text__heading">Ciphertext</div>
+                        <textarea id="ta-ciphertext" class="text__textarea"></textarea>
+                    </div>
+                    
+                </sl-split-panel>
+
+            </div><!-- .full-col -->
+        </div><!-- .row -->
+    </div><!-- .container-860 -->
+      
+
+    <!-- ---- user input controls -->
+
+    <div class="container-860">
+        <div class="row">
+            <div class="full-col">
+
+                <sl-tab-group>
+
+                    <sl-tab slot="nav" panel="caesar">Caesar</sl-tab>
+                    <sl-tab slot="nav" panel="vignere">Vignere</sl-tab>
+                    
+                    <sl-tab-panel name="caesar">
+                        <div class="tab-wrapper">
+                            <div style="margin-bottom: 1.5rem;"></div> <!-- spacer -->
+                            <sl-range id="slidercaesar" name="range" label="Rotation" min="1" max="26"></sl-range>
+                            <div style="margin-bottom: 1.5rem;"></div> <!-- spacer -->
+                            <input class="btn" type="button" onclick="clickedButtonCaesar()" value="Encrypt">
+                            &nbsp;&nbsp;
+                            <input class="btn" type="button" onclick="clickedButtonCaesarDecrypt()" value="Decrypt">
+                            <!-- &nbsp;&nbsp;
+                            <input type="button" onclick="clickedButtonCaesarAuto()" value="Auto-Decrypt"></input> --> 
+                        </div><!-- end Caesar cipher -->
+                    </sl-tab-panel>
+
+                    <sl-tab-panel name="vignere">
+                        <div class="tab-wrapper">
+                            <div style="margin-bottom: 1.5rem;"></div> <!-- spacer -->
+                            <input type="text" name="textfield_vig" id="keyVig" placeholder="enter key">
+                            <div style="margin-bottom: 1.5rem;"></div> <!-- spacer -->
+                            <input class="btn" type="button" onclick="clickedButtonVignereEnc()" value="Encrypt">
+                            &nbsp;&nbsp;
+                            <input class="btn" type="button" onclick="clickedButtonVignereDec()" value="Decrypt">
+                        </div><!-- end Vignere cipher -->
+                    </sl-tab-panel>
+
+                </sl-tab-group>
+
+            </div><!-- .full-col -->
+        </div><!-- .row -->
+    </div><!-- .container-860 -->       
+      
+
+	<!-- ---- end user input controls -->
+	
+
+	<!-- ---- Frequency Analysis well -->
+	<!--<div id="fa-well" class="well"></div>-->
+	<!-- <textarea id="fa-well" rows="20"></textarea> -->
+	
+
+    <!-- ---- JavaScript -->
+
+	<!-- import ciphersAlphabetic.js and app.js -->
+	<script type="text/javascript" src="assets/ciphersAlphabetic.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+
+</body>
+</html>
