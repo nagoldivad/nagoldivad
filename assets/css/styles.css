@@ -1,14 +1,26 @@
 /*
- * styles.css
- * this is the main stylesheet for this website
- * https://nagoldivad.com
+ * Filename: styles.css
  * 
- * March to May, 2024
- *
+ * Description: Main stylesheet for nagoldivad
+ * This file contains styles for layout, typography, and custom components.
+ * 
+ * Author: David Logan
+ * Created: 2024-03-24
+ * Last modified: 2024-07-17
+ * 
+ * Table of Contents:
+ * 
+ * 
+ * Dependencies: 
+ * - none
+ * 
+ * Notes:
+ * - This stylesheet (sometimes attempts to) follows BEM naming convention
+ * - Media queries are mobile-first(?)
  */
 
 
-/* the links are leftover from the previous iteration  */
+/* these links are leftover from the previous iteration  */
 
 a {
     color: red;
@@ -43,7 +55,7 @@ a:hover {
     font-style: normal;
 }
 
-/* images -- this stuff was needed... from before when BS was used */
+/* images -- this stuff was needed... from before when Bootstrap was used */
 .img-fluid {
     max-width: 100%;
     height: auto;
