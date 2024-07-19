@@ -73,6 +73,14 @@ section.dml-section {
     padding-right: 2rem;
     padding-bottom: 2rem;
 }
+section.dml-section-860 {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
 
 /* 1 col div */
 .dml-row-1 {

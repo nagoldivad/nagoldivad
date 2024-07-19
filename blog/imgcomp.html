@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <meta name="keywords" content="web design" />
+    <meta name="description" content="Web design for businesses and individuals"/>
+    <meta name="author" content="David M. Logan" />
+
+    <title>Blog - Image Compression - Nagoldivad</title>
+
+    <meta name="theme-color" content="#007bff" />
+    <!-- <link rel="icon" sizes="192x192" href="nice-highres.png" /> -->
+    <!-- <link rel="apple-touch-icon" href="icon.png" /> -->
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="canonical" href="https://www.nagoldivad.com/blog/imgcomp.html" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+</head>
+<body class="manrope">
+
+    <!--[if IE]>
+        <div class="alert alert-danger" role="alert">
+            You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+        </div>
+    <![endif]-->
+
+
+    <!-- --- Nav --- -->
+
+    <section id="nav" class="dml-section">
+        <div class="dml-row-2">
+            <div>
+                <h1><a href="../index.html">David Logan</a></h1>
+            </div>
+            <div class="dml-nav-right">
+                <p>
+                    <a href="index.html">blog</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="../apps/index.html">apps</a>
+                </p>
+            </div>
+        </div><!-- .dml-row-2 -->
+    </section>
+
+    <section class="dml-section-860">
+
+        <h1 id="dont-neglect-image-compression">Don’t neglect image
+        compression</h1>
+
+        <p style="font-size: 85%;">David Logan | Published July 19, 2024</p>
+
+        <p>Too often web developers fail to consider the effect image size has
+        on a web site. Smaller image size is important not only for user
+        experience but also for search engine rankings. Additionally, smaller
+        file sizes are better for users on limited or slow internet connections
+        (which is often the case for mobile users).</p>
+
+        <h2 id="what-image-format-should-i-use">What image format should I
+        use?</h2>
+
+        <p>Here’s my recommendations for images, in order of preference:</p>
+
+        <ol type="1">
+            <li>Use the AVIF format</li>
+            <li>Use the WebP format</li>
+            <li>Use the jpeg format with MozJPEG compression</li>
+        </ol>
+
+        <p>Here’s more information on each of these options…</p>
+
+        <h2 id="avif">AVIF</h2>
+
+        <p>According to <a href="https://caniuse.com/?search=avif">caniuse</a>
+        AVIF has about 94% compatibility. AVIF can achieve substantially smaller
+        files sizes than jpeg with no loss of quality. Unlike jpeg, AVIF
+        supports alpha channel transparency. AVIF can be used for animated
+        images, similar to GIF but with better compression. And AVIF offers both
+        lossy and lossless compression options (jpeg only offers lossy
+        compression).</p>
+
+        <p>If you use AVIF you should consider using a fallback technique with
+        the <code>&lt;picture&gt;</code> element (see example below).</p>
+
+        <h2 id="webp">WebP</h2>
+
+        <p>According to <a href="https://caniuse.com/?search=webp">caniuse</a>
+        WebP has about 97% compatibility. WebP typically offers 25-35% smaller
+        file sizes compared to jpeg at equivalent visual quality. WebP also
+        supports alpha channel transparency, lossy and lossless compression
+        options, and can do animations similar to GIF but with better
+        compression.</p>
+
+        <p>When using WebP you should consider using a fallback approach with
+        the <code>&lt;picture&gt;</code> element (see example below).</p>
+
+        <h2 id="mozjeg">MozJEG</h2>
+
+        <p>If you’re using jpeg images use <a
+        href="https://github.com/mozilla/mozjpeg">MozJPEG</a> to compress them.
+        It can compress an image 50% to 80% without any quality loss. You can
+        use the <a href="https://mozjpeg.com/">MozJPEG web interface</a>, or use
+        the command line tools.</p>
+
+        <p>To install the command line tools on Ubuntu or Debian-based systems:
+
+            <code>sudo apt install mozjpeg</code></p>
+
+        <p>On MacOS you can use brew: <code>brew install mozjpeg</code></p>
+
+        <p>After installation of mozjpeg, you can use <code>cjpeg</code>, <code>djpeg</code>, and <code>jpegtran</code> from the command line.</p>
+
+        <h2 id="always-use-the-picture-element">Always use the picture
+        element</h2>
+
+        <p>Using the <code>&lt;picture&gt;</code> element allows you to use AVIF and WebP
+        while still supporting older browsers that don’t support those newer
+        image formats. Here’s an example:</p>
+
+        <pre><code>
+        &lt;picture&gt;
+            &lt;source srcset=&quot;image.webp&quot; type=&quot;image/webp&quot;&gt;
+            &lt;source srcset=&quot;image.jpg&quot; type=&quot;image/jpeg&quot;&gt; 
+            &lt;img src=&quot;image.jpg&quot; alt=&quot;Description of image&quot;&gt;
+        &lt;/picture&gt;
+        </code></pre>
+
+        <p>This code does the following:</p>
+
+        <ol type="1">
+            <li>It first tries to load the WebP version of the image.</li>
+            <li>If WebP isn’t supported, it falls back to the JPEG version.</li>
+            <li>The <code>&lt;img&gt;</code> tag serves as a final fallback for browsers that
+                don’t support the <code>&lt;picture&gt;</code> element.</li>
+        </ol>
+
+        <h2 id="graphical-applications-for-image-compression">Graphical
+        applications for image compression</h2>
+
+        <p>There are a few nice GUI apps that make it convenient to compress
+        images.</p>
+
+        <ul>
+            <li>For MacOS, check out <a
+                href="https://imageoptim.com/mac">ImageOptim</a>.</li>
+            <li>On Windows, take a look at <a
+                href="https://nikkhokkho.sourceforge.io/?page=FileOptimizer">FileOptimizer</a>.</li>
+            <li>For Linux there’s <a href="https://trimage.org/">Trimage</a></li>
+        </ul>
+
+        <h2 id="online-web-based-image-optimizers-that-are-free-to-use">Online
+        web-based image optimizers (that are free to use)</h2>
+
+        <p>Here are some good web-based compression tools that are free to
+        use.</p>
+
+        <ul>
+            <li><a href="https://imageoptim.com/online">ImageOptim online
+                interface</a></li>
+            <li><a href="https://github.com/mozilla/mozjpeg">MozJPEG</a></li>
+        </ul>
+
+        <p>Note: some modern build systems include image conversion/compression.
+        Consult the documentation of your build system.</p>
+
+    </section>
+
+
+<!-- Scripts -->
+
+<!-- GoatCounter analytics - https://goatcounter.com/ -->
+<script data-goatcounter="https://davlog.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>
