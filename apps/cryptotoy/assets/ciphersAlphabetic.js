@@ -103,3 +103,24 @@ function encryptWithVignere(theKey, theText) {
 	// return the cipherText string
 	return cipherText;
 }
+
+// this function created by Claude Sonnet 3.5 (2024, July 20) 
+function characterFrequencyAnalysis(str) {
+    // Convert the string to lowercase and remove non-alphabetic characters
+    const cleanStr = str.toLowerCase().replace(/[^a-z]/g, '');
+    // Initialize an array to store character frequencies
+    const frequencyArray = new Array(26).fill(0);
+    // Count the frequency of each character
+    for (let char of cleanStr) {
+        const index = char.charCodeAt(0) - 97; // 'a' is 97 in ASCII
+        frequencyArray[index]++;
+    }
+    // Calculate the total number of characters
+    const totalChars = cleanStr.length;
+    // Calculate the frequency percentage for each character
+    return frequencyArray.map((count, index) => {
+        const char = String.fromCharCode(index + 97);
+        const percentage = (count / totalChars * 100).toFixed(2) + '%';
+        return `${char}: ${percentage}`;
+    });
+}

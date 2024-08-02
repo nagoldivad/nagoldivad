@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to initialize app
 function initializeApp() {
     createUILinks();
+    rangeStepUpTo13();
     setRangeValue();
 }
-
 
 // UI connections:
 var taPlainText = ""; // textarea for plaintext (left side)
@@ -77,6 +77,12 @@ function setRangeValue() {
     theSlider.setAttribute('label', 'Rotation: ' + theSliderValue);
 }
 
+function rangeStepUpTo13() {
+    // we're doing this because the css --track-active-offset isn't working
+    for (var i = 0; i < 12; i++) {
+        theSlider.stepUp();
+    }
+}
 
 // ---- ---- JavaScript to respond to button clicks
 
@@ -126,10 +132,19 @@ function clickedButtonCaesarDecrypt() {
     return;
 }
 
-function clickedButtonCaesarAuto() {
-    
-        return;
-    }
+/*function clickedButtonCaesarAuto() {
+    // get text and send to function
+    var theText = taCipherText.value;
+    var theResult = characterFrequencyAnalysis(theText);
+    console.log(theResult);
+    var faStr = "";
+    theResult.forEach(element => {
+        faStr += element + "<br>";
+    });
+    console.log(faStr);
+    document.getElementById("fa").innerHTML = faStr;
+    return;
+}*/
 
 function clickedButtonVignereEnc() {
 
@@ -201,24 +216,3 @@ function clickedButtonVignereDec() {
 
 }
 
-function drawFAWell() {
-    
-    console.log("drawFAWell called.");
-    
-    // variable initialize
-    fa_array = new Array();
-    
-    // get values from ta
-    
-    
-    // fill fa_array
-    for ( i = 0 ; i < 25 ; ++i )
-        fa_array[i] = 5;
-        
-    //draw into fa-well
-    for ( i = 0 ; i < 25 ; ++i ) {
-        document.getElementById("fa-well").value = document.getElementById("fa-well").value + "char: " + fa_array[i] + "\n" ;
-
-    }
-    
-} // drawFAWell

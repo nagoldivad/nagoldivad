@@ -13,11 +13,12 @@
 
 # TEAM
 
-    David M. Logan -- Web Developer -- @nagoldivad
+    David M. Logan -- Web Developer
 
 
 # TECHNOLOGY COLOPHON
 
 ## Technologies used
 
-Bootstrap 5
+VS Code
+HTML5 Boilerplate (https://html5boilerplate.com/)

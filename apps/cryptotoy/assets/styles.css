@@ -80,7 +80,7 @@
 sl-range {
     --track-color-active: var(--sl-color-primary-600);
     --track-color-inactive: var(--sl-color-primary-100);
-    --track-active-offset: 50%;
+    /* --track-active-offset: 50%; */
 }
 
 .tab-wrapper {
