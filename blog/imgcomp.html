@@ -59,16 +59,11 @@
         <h1 id="dont-neglect-image-compression">Don’t neglect image
         compression</h1>
 
-        <p style="font-size: 85%;">David Logan | Published July 19, 2024</p>
+        <p style="font-size: 85%;">By David Logan &nbsp; | &nbsp; Published July 19, 2024 &nbsp; | &nbsp; Updated August 10, 2024</p>
 
-        <p>Too often web developers fail to consider the effect image size has
-        on a web site. Smaller image size is important not only for user
-        experience but also for search engine rankings. Additionally, smaller
-        file sizes are better for users on limited or slow internet connections
-        (which is often the case for mobile users).</p>
+        <p>I come across a surprising number of web sites that have huge image sizes, sometimes larger than 2MB. These unnecessarily big images contribute to a bad user experience. They can also be detrimental for search engine rankings. But compressing images down to a reasonable size is remarkably easy.</p>
 
-        <h2 id="what-image-format-should-i-use">What image format should I
-        use?</h2>
+        <h2 id="what-image-format-should-i-use">What image format should I use?</h2>
 
         <p>Here’s my recommendations for images, in order of preference:</p>
 
@@ -83,29 +78,18 @@
         <h2 id="avif">AVIF</h2>
 
         <p>According to <a href="https://caniuse.com/?search=avif">caniuse</a>
-        AVIF has about 94% compatibility. AVIF can achieve substantially smaller
-        files sizes than jpeg with no loss of quality. Unlike jpeg, AVIF
-        supports alpha channel transparency. AVIF can be used for animated
-        images, similar to GIF but with better compression. And AVIF offers both
-        lossy and lossless compression options (jpeg only offers lossy
-        compression).</p>
+        AVIF has about 94% compatibility across web browsers in 2024. AVIF can achieve substantially smaller files sizes than jpeg with no loss of quality. Unlike jpeg, AVIF supports alpha channel transparency. AVIF can be used for animated images, similar to GIF but with better compression. And AVIF offers both lossy and lossless compression options (jpeg only offers lossy compression).</p>
 
-        <p>If you use AVIF you should consider using a fallback technique with
-        the <code>&lt;picture&gt;</code> element (see example below).</p>
+        <p>If you use AVIF you should consider using a fallback technique with the <code>&lt;picture&gt;</code> element (see example below).</p>
 
         <h2 id="webp">WebP</h2>
 
         <p>According to <a href="https://caniuse.com/?search=webp">caniuse</a>
-        WebP has about 97% compatibility. WebP typically offers 25-35% smaller
-        file sizes compared to jpeg at equivalent visual quality. WebP also
-        supports alpha channel transparency, lossy and lossless compression
-        options, and can do animations similar to GIF but with better
-        compression.</p>
+        WebP has about 97% compatibility across web browsers in 2024. WebP typically offers 25-35% smaller file sizes compared to jpeg at equivalent visual quality. WebP also supports alpha channel transparency, lossy and lossless compression options, and can do animations similar to GIF but with better compression.</p>
 
-        <p>When using WebP you should consider using a fallback approach with
-        the <code>&lt;picture&gt;</code> element (see example below).</p>
+        <p>When using WebP you should consider using a fallback approach with the <code>&lt;picture&gt;</code> element (see example below).</p>
 
-        <h2 id="mozjeg">MozJEG</h2>
+        <h2 id="mozjeg">MozJPEG</h2>
 
         <p>If you’re using jpeg images use <a
         href="https://github.com/mozilla/mozjpeg">MozJPEG</a> to compress them.
