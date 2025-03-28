@@ -325,6 +325,43 @@ label {
 	padding-left: 20px;
 }
 
+/* ---- blog article styles ---- */
+.blog__date {
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.blog__chat_chat-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.blog__chat_msg {
+  max-width: 90%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+  position: relative;
+  word-wrap: break-word;
+}
+.blog__chat_user {
+  align-self: flex-start;
+  background: #f9cbf9;
+}
+.blog__chat_charla {
+  align-self: flex-end;
+  background: #d0e6f6;
+
+}
+/* @media (min-width: 600px) {
+  .blog__chat_chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+} */
+
 
 /* ---- tables for blog article index ---- */
 
